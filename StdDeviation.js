@@ -1,7 +1,7 @@
 function stdDeviation(popVals) {
-    var popStdDev
-    var mean
-    var popSize = popVals.length
+    let popStdDev
+    let mean
+    const popSize = popVals.length
 
     /* Make sure the population size value is valid */
     if (popSize <= 0) {
