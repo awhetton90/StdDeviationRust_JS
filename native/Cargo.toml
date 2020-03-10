@@ -1,0 +1,20 @@
+[package]
+name = "std-deviation"
+version = "0.1.0"
+authors = ["Adam Whetton <Adam.Whetton@opensynergy.com>"]
+license = "MIT"
+build = "build.rs"
+exclude = ["artifacts.json", "index.node"]
+
+[lib]
+name = "std_deviation"
+crate-type = ["cdylib"]
+
+[build-dependencies]
+neon-build = "0.3.3"
+
+[dependencies]
+neon = "0.3.3"
+neon-serde = "0.3.0"
+serde_derive = "1.*"
+serde = "1.*"
